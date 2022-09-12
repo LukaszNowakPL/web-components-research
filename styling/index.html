@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+    <head>
+        <meta charSet="utf-8"/>
+        <title>Styling test page</title>
+        <meta content="width=device-width,initial-scale=1" name="viewport"/>
+        <link rel="stylesheet" href="./ln-style.css"/>
+        <style>
+            .container {
+                padding: 10px
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Buttons</h2>
+            <h3>Versions</h3>
+            <button class="ln-button ln-button--primary">Primary</button>
+            <button class="ln-button ln-button--secondary">Secondary</button>
+            <h3>Modifications</h3>
+            <button class="ln-button ln-button--primary" disabled="disabled">Primary disabled</button>
+            <button class="ln-button ln-button--secondary" disabled="disabled">Secondary disabled</button>
+        </div>
+        <div class="container">
+            <h2>Text inputs</h2>
+            <input type="text" class="ln-text" value="basic" />
+            <input type="text" class="ln-text" disabled="disabled" value="disabled" />
+        </div>
+        <div class="container">
+            <h2>Lines</h2>
+            <hr class="ln-line ln-line--primary" />
+            <hr class="ln-line ln-line--secondary" />
+        </div>
+    </body>
+</html>
