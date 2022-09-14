@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/stencil.esm.js"></script>
+    <script nomodule src="/build/stencil.js"></script>
+
+    <style>
+      .container {
+        padding: 20px;
+        margin: 10px 0px;
+        border: 1px #ddd solid;
+        border-radius: 10px;
+      }
+      .container_line {
+        margin-bottom: 20px
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Example of web components created</h1>
+    <div class="container">
+      <h2>Headers</h2>
+      <hr class="container_line" />
+      <ln-header>Header of level 2</ln-header>
+      <ln-header variant="secondary">Header of level 2 (secondary variant of underline)</ln-header>
+      <ln-header level="3">Header of level 3</ln-header>
+    </div>
+
+    <div class="container">
+      <h2>Lines</h2>
+      <hr class="container_line" />
+      <ln-line />
+      <ln-line variant="secondary" />
+    </div>
+
+    <div class="container">
+      <h2>Text inputs</h2>
+      <hr class="container_line" />
+      <ln-text />
+      <ln-text value="with value" />
+      <ln-text value="disabled" disabled="true" />
+    </div>
+
+    <div class="container">
+      <h2>Buttons</h2>
+      <hr class="container_line" />
+      <ln-button>Primary</ln-button>
+      <ln-button disabled="true">Primary disabled</ln-button>
+      <ln-button variant="secondary">Secondary</ln-button>
+      <ln-button variant="secondary" disabled="true">Secondary disabled</ln-button>
+    </div>
+
+    <div class="container">
+      <h2>Action sections</h2>
+      <hr class="container_line" />
+      <ln-action-section info="Action section with info defined"><p>And some custom text below</p></ln-action-section>
+      <ln-action-section info="With other web components provided">
+        <div><ln-text value="Custom value" /></div>
+        <div><ln-button>Custom button</ln-button></div>
+      </ln-action-section>
+    </div>
+  </body>
+</html>
